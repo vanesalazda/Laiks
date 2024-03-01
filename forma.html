@@ -5,13 +5,19 @@
     <title>Formas</title>
     <link href="css/stils.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body class="bg1">
     <h1>Formas un ievadlauku piemērs</h1>
-    <form>
-        <p>Šodienas datums <input name="datums"></p>
-        <p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
+    <form><p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
             <input onclick="datums.value=new Date();" name="poga" value="DATUMS" type="button">
         </p>
+        <p>Šodienas datums <input name="datums"></p>
+        
+        <div>
+            <input value="+" name="plus" onclick="rez1.value=dsk.value-(-datums.value)" type="button">
+        </div>
+        <div>Dienu skaits<input type="text" name="dsk"> </div>
+        <p></p>
+        <div>Rezultāts<input name="rez1"> </div>
         <p>Ja gribi izdzēst datumua lodziņa saturu, spied pogu RESET
             <input value="RESET" type="reset">
         </p>
@@ -32,6 +38,9 @@
         <div>2.skaitlis<input type="text" name="sk2"> </div>
         <hr>
         <div>Rezultāts<input name="rez"> </div>
+    </form>
+    <form>
+        
     </form>
 </body>
 </html>
