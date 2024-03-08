@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+            <div>
+            <p>Aprēķināt cik daudz informācijas var lejuplādēt<br> <input type="text" name="daudzums"> sekundēs, ja interneta ātrums ir 25 Mbps.</p></div>
+    
+    <p>Atbilde</p><br>
+    <div><input type="text" name="rez"><input type="radio" onClick="rez.value=daudzums.value*25*122" value="KiB">
+    </div>
+        </form>
+        <div class="form">
+        <form>
+            <div><p><input type="text" name="gb">GB=</p></div>
+            <div><p> <input type="button" onClick="mb.value=gb.value*1000" value="Izteikt megabaitos">
+                <input type="text" name="mb" >MB=</p></div>
+            <div><p> <input type="button" onClick="mib.value=gb.value*953.674" value="Izteikt mibibaitos">
+                <input type="text" name="mib">MiB=</p></div>
+        </form>
+            <div>
+    </body>
+</html>
